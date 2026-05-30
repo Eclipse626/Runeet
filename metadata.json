@@ -1,0 +1,6 @@
+{
+  "name": "Runeet",
+  "description": "Run with people who get it. Runeet matches you with runners who share your pace, your schedule, and your goals. No awkward mismatches. Just good runs with the right people.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

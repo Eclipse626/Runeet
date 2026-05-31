@@ -56,7 +56,9 @@ export const Navigation: React.FC = () => {
                 Safety
               </a>
               <a
-                href="#waitlist"
+                href="https://tally.so/r/Y5k0EN"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                   isScrolled
                     ? "bg-slate-900 text-white hover:bg-slate-800 shadow-sm"
@@ -106,7 +108,9 @@ export const Navigation: React.FC = () => {
               Safety
             </a>
             <a
-              href="#waitlist"
+              href="https://tally.so/r/Y5k0EN"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="px-6 py-4 rounded-xl bg-brand-green text-white font-display font-extrabold text-sm uppercase tracking-wider mt-6 flex items-center justify-center gap-2 max-w-sm mx-auto w-full shadow-lg shadow-brand-green/15"
             >

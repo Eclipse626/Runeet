@@ -9,6 +9,7 @@ import { HeroVisual } from "./components/HeroVisual";
 import { MatchSimulator } from "./components/MatchSimulator";
 import { WaitlistForm } from "./components/WaitlistForm";
 import { Footer } from "./components/Footer";
+import showcaseImage from "./assets/images/runeet_showcase_1780225315246.png";
 import {
   Users,
   MapPin,
@@ -35,13 +36,13 @@ export default function App() {
           ======================================= */}
       <section
         id="hero"
-        className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden"
+        className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 lg:pt-48 lg:pb-40 flex flex-col items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       >
         {/* Rich Animated GPS track background visual */}
         <HeroVisual />
 
         {/* Foreground Content */}
-        <div className="relative z-10 max-w-4xl mx-auto text-center mt-12">
+        <div className="relative z-10 max-w-4xl mx-auto text-center mt-4">
           {/* Subtle tag */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-green/10 border border-brand-green/25 text-xs font-semibold tracking-wide text-emerald-800 mb-6 backdrop-blur-sm animate-fadeIn">
             <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse" />
@@ -61,8 +62,10 @@ export default function App() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4">
             <a
-              href="#waitlist"
-              className="px-10 py-5 bg-brand-green hover:bg-brand-green/95 text-white font-display font-black text-sm uppercase tracking-wider rounded-xl transition-all duration-200 transform active:scale-[0.98] shadow-xl shadow-brand-green/20"
+              href="https://tally.so/r/Y5k0EN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-5 bg-brand-green hover:bg-brand-green/95 text-white font-display font-black text-sm uppercase tracking-wider rounded-xl transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-xl shadow-brand-green/20"
             >
               Join the waitlist
             </a>
@@ -70,10 +73,22 @@ export default function App() {
               No spam, ever.
             </span>
           </div>
+
+          {/* New App Showcase Image Mockup */}
+          <div className="mt-16 sm:mt-24 max-w-5xl mx-auto px-4 relative z-20 animate-fadeIn" style={{ animationDelay: "200ms" }} id="hero-app-mockup">
+            <div className="rounded-[24px] sm:rounded-[32px] p-2 sm:p-3 bg-white/85 backdrop-blur-md border border-slate-200/60 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.12)] overflow-hidden">
+              <img
+                src={showcaseImage}
+                alt="Runeet Application Showcase mockup"
+                className="w-full h-auto rounded-[16px] sm:rounded-[24px] object-cover border border-slate-200/40"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Elegant Animated Scroll Down Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-gray-500 animate-bounce">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-gray-500 animate-bounce">
           <span className="text-[10px] uppercase font-mono tracking-widest">Scroll to explore</span>
           <ArrowDown className="w-4 h-4 text-brand-green" />
         </div>

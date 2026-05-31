@@ -277,7 +277,9 @@ export const MatchSimulator: React.FC = () => {
                 </p>
               </div>
               <a
-                href="#waitlist"
+                href="https://tally.so/r/Y5k0EN"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-4 py-2 rounded-xl bg-brand-green hover:bg-brand-green/95 text-white text-xs font-bold transition-all text-center flex items-center justify-center gap-1.5 shadow shadow-brand-green/10"
               >
                 Join waitlist to match <Sparkles className="w-3.5 h-3.5" />
